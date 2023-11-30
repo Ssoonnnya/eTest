@@ -20,6 +20,7 @@ return new class extends Migration
             $table->text('description');
             $table->float('weight');
             $table->integer('amount');
+            $table->float('price');
             $table->timestamps();
         });
     }

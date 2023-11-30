@@ -1,7 +1,10 @@
-import Vue from 'vue';
+require('./bootstrap');
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+import { createApp } from 'vue';
+import showList from './components/showList.vue';
 
-const app = new Vue({
-    el: '#app',
-});
+createApp({
+    components: {
+        showList,
+    }
+}).mount('#app');

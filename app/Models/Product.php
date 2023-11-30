@@ -16,6 +16,7 @@ class Product extends Model
         'title',
         'description',
         'weight',
-        'amount'
+        'amount',
+        'price'
     ];
 }
